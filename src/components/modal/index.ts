@@ -202,7 +202,7 @@ class Modal implements ModalInterface {
             }
 
             // prevent body scroll
-            document.body.classList.add('overflow-hidden');
+            // document.body.classList.add('overflow-hidden');
 
             // callback function
             this._options.onShow(this);
@@ -220,7 +220,7 @@ class Modal implements ModalInterface {
             this._isHidden = true;
 
             // re-apply body scroll
-            document.body.classList.remove('overflow-hidden');
+            // document.body.classList.remove('overflow-hidden');
 
             if (this._options.closable) {
                 this._removeModalCloseEventListeners();
